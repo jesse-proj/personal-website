@@ -1,0 +1,76 @@
+/* Footer */
+
+footer {
+	background: #010A0D;
+
+	text-align: center;
+
+	font-size: 0.9rem;
+
+	display: flex; 
+	justify-content: space-between; 
+	text-align: justify;
+
+	padding-left: 7rem; 
+	padding-right: 7rem;
+
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	gap: 2rem;
+}         
+
+@media (max-width: 1080px){
+	footer {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		justify-content: center;
+	}
+}
+
+footer a {
+	color: #cd90b9;
+}     
+
+.name-emphasis {
+	color: #cd90b9;
+	font-weight: bold;
+}
+
+.contact-icon {
+	height: 1.3rem; 
+	display: block; 
+	margin-top: 0.5rem;
+}
+
+.contact-info-container {
+	display: flex; 
+	gap: 0.5rem; 
+	align-items: center;
+}
+
+/* This is kind a hack. The SVGs are not perfect (they have blank tops) so margin is added to "center" the text */
+.contact-info-container a {
+	margin-top: 0.4rem;
+}
+
+#website-description {
+	max-width: 20rem;
+}
+
+#money-donation {
+	width: 9rem;
+}
+
+#newsletter {
+	width:  12rem;
+}
+
+#newsletter input {
+	width: 100%; 
+	box-sizing: border-box;
+}
+
+#newsletter h3 {
+	margin-bottom: 0.5rem;
+}

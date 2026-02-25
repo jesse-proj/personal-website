@@ -1,0 +1,65 @@
+.navbar {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+	color: black;
+
+	flex-wrap: wrap;
+}
+
+.navbar-blend-in {
+	background: #cd90b9;
+}
+
+.navbar-blend-in a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.navbar-black {
+	background: #010A0D;
+}
+
+.navbar-black a {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar p {
+	margin-right: 20px;
+}
+
+.right-nav-buttons, .left-nav-buttons {
+	display: flex;
+	gap: 10px;
+}
+
+@media (max-width: 767px) {
+	.navbar p {
+		margin-left: 5px;
+		margin-right: 5px;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1080px){
+	.navbar p {
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 1.7rem;
+	}
+}
+
+@media (min-width: 1081px) {
+	.navbar p {
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,56 @@
+.window {
+	border: 2px solid #A65EAD;
+	border-radius: 3px;
+	border-top: none;
+}
+
+.window-title {
+	background: #A65EAD;
+	color: white;
+
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 0.95rem;
+
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+}
+
+.buttons-div {
+	display: flex;
+	gap: 0.6rem;
+}
+
+.menubar {
+	display: flex;
+	gap: 0.6rem;
+	background: ;
+	background: #7D5385;
+
+	font-size: 0.90rem;
+	height: 0.90rem;
+
+	padding-left: 0.1rem;
+	padding-right: 0.1rem;
+	padding-bottom: 0.1rem;
+}
+
+.menubar button {
+	background: inherit;
+	font-family: inherit;
+	padding: 0;
+}
+
+.menubar a, .menubar button {
+	text-decoration: none;
+	color: white;
+}
+
+.menubar a:first-letter, .menubar button:first-letter {
+	text-decoration: underline;
+}
+
+.window-content {
+	padding: 1rem;
+}
