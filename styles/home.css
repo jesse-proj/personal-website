@@ -81,24 +81,6 @@
 	}
 }
 
-@media (max-width: 767px) {
-	#blog-updates-content {
-		height: 45vh;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1080px){
-	#blog-updates-content {
-		height: 25vh;
-	}
-}
-
-@media (min-width: 1081px) {
-	#blog-updates-content {
-		height: 45vh;
-	}
-}
-
 /* Project cards */
 
 .projects-container {
