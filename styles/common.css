@@ -66,10 +66,6 @@ ol, ul {
 	padding-bottom: 0;
 }
 
-.inherit-bg {
-	background: inherit;
-}
-
 ::-moz-selection {
   color: black; 
   background-color: #cd90b9; 
@@ -80,59 +76,6 @@ ol, ul {
   background-color: #cd90b9; 
 }
 
-.text-accent-color {
-	color: #cd90b9;
-}
 
-.text-accent-color-underline {
-	text-decoration: underline;
-	text-decoration-color: #cd90b9;
-}
 
-.text-accent-color-first-letter-underline::first-letter {
-	text-decoration: underline;
-	text-decoration-color: #cd90b9;
-}
 
-.mood-profile-img {
-	border-radius: 5px;
-	image-rendering: pixelated; 
-	height: 100%;
-}
-
-.blend-in-button {
-	background: inherit; 
-	color: white
-}
-
-.sticky {
-	position: sticky; 
-	top: 1rem
-}
-
-.big-text {
-	font-size: 1.4rem;
-}
-
-.small-text {
-	font-size: 0.9rem;
-}
-
-.enlarge-on-hover {
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.enlarge-on-hover:hover {
-	transform: scale(1.03);
-	box-shadow: 0 3px 15px black;
-}
-
-.no-decor-link {
-	text-decoration: none;
-	color: white;
-}
-
-.no-decor-link-container a {
-	text-decoration: none;
-	color: white;
-}

@@ -19,9 +19,6 @@
 	#bio-window {
 		width: 90vw;
 	}
-	#short-bio {
-		font-size: 0.8rem;
-	}
 }
 
 
@@ -29,17 +26,11 @@
 	#bio-window {
 		width: 60vw;
 	}
-	#short-bio {
-		margin-top: 1.3rem
-	}
 }
 
 @media (min-width: 1081px) {
 	#bio-window {
 		width: 30vw;
-	}
-	#short-bio {
-		margin-top: 1rem
 	}
 }
 
@@ -61,27 +52,7 @@
 	margin-bottom: 0.5rem;
 }
 
-@media (max-width: 767px) {
-	#status-window-content #image-div {
-		width: 28%;
-	}
-
-	#status-window-content #bordered-text {
-		padding-bottom: 1rem;
-	}
-}
-
-@media (min-width: 768px) {
-	#status-window-content #image-div{
-		width: 18%;
-	}
-
-	#status-window-content #bordered-text {
-		padding-bottom: 1.2rem;
-	}
-}
-
-/* Project cards */
+/* PROJECT CARDS */
 
 .projects-container {
 	display: flex;
@@ -96,3 +67,10 @@
 	margin-bottom: 1rem;
 }
 
+/* MISC */
+
+.mood-profile-img {
+	border-radius: 5px;
+	image-rendering: pixelated; 
+	height: 100%;
+}

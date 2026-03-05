@@ -1,0 +1,185 @@
+/* TEXT */
+
+.text-accent-color {
+	color: #cd90b9;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.big-text {
+	font-size: 1.4rem;
+}
+
+.small-text {
+	font-size: 0.9rem;
+}
+
+.no-decor-link {
+	text-decoration: none;
+	color: white;
+}
+
+.no-decor-link-container a {
+	text-decoration: none;
+	color: white;
+}
+
+/* FLEXBOX */
+
+.responsive-flex-reverse, .responsive-flex, .responsive-flex-no-width-fill {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.responsive-flex-reverse > *, .responsive-flex > * {
+	width: 100%;
+	min-width: 0;
+}
+
+@media (max-width: 767px) {
+	.responsive-flex-reverse {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.responsive-flex, .responsive-flex-no-width-fill {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.flex-gap-1 {
+	gap: 1rem;
+}
+.flex-gap-2 {
+	gap: 1rem;
+}
+.flex-gap-3 {
+	gap: 1rem;
+}
+.flex-gap-4 {
+	gap: 1rem;
+}
+.flex-gap-5 {
+	gap: 1rem;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-space-between {
+	justify-content: space-between;
+}
+
+.flex-fill {
+	flex: 1;
+}
+
+
+/* OMITTING */
+
+@media (max-width: 767px) {
+	.mobile-omit {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1080px){
+	.tablet-omit {
+		display: none;
+	}
+}
+
+
+@media (min-width: 1081px) {
+	.desktop-omit {
+		display: none;
+	}
+}
+
+/* MARGINS */
+
+.margin-top-1 {
+	margin-top: 1rem;
+}
+.margin-top-2 {
+	margin-top: 2rem;
+}
+.margin-top-3 {
+	margin-top: 3rem;
+}
+.margin-top-4 {
+	margin-top: 4rem;
+}
+.margin-top-5 {
+	margin-top: 5rem;
+}
+
+.margin-bottom-1 {
+	margin-bottom: 1rem;
+}
+.margin-bottom-2 {
+	margin-bottom: 2rem;
+}
+.margin-bottom-3 {
+	margin-bottom: 3rem;
+}
+.margin-bottom-4 {
+	margin-bottom: 4rem;
+}
+.margin-bottom-5 {
+	margin-bottom: 5rem;
+}
+
+/* WIDTH */
+
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 50%;
+}
+
+/* MISC */
+
+.inherit-bg {
+	background: inherit;
+}
+
+.enlarge-on-hover {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enlarge-on-hover:hover {
+	transform: scale(1.03);
+	box-shadow: 0 3px 15px black;
+}
+
+.sticky {
+	position: sticky; 
+	top: 1rem
+}
+
+
