@@ -90,31 +90,35 @@
 
 							<div class = 'window-content'>
 								<div class = 'responsive-flex-no-width-fill flex-center'>
-									<img src = 'assets/moods/angry.gif' 
+									<img src = 'assets/moods/neutral.gif' 
+										 id = 'mood-img-display'
 										 class = 'mood-profile-img' 
 										 style = 'height: 8rem'>
 
 									<div class = 'flex-fill full-width'>
 
-										<p class = 'text-accent-color text-center'> 
-											"Why is this so nakakatamad." 
+										<p class = 'text-accent-color text-center'
+										   id = 'message-display'> 
 										</p>
 
 										<hr>
 
 										<div class = 'flex-row flex-space-between'>
-											<p class = 'text-accent-color'> Mood: </p>
-											<p> Angry </p>
+											<p> Mood: </p>
+											<p class = 'text-accent-color'
+											   id = 'mood-display'></p>
 										</div>
 
 										<div class = 'flex-row flex-space-between'>
-											<p class = 'text-accent-color'> Task: </p>
-											<p> Angry </p>
+											<p> Task: </p>
+											<p class = 'text-accent-color'
+											   id = 'task-display'></p>
 										</div>
 
 										<div class = 'flex-row flex-space-between'>
-											<p class = 'text-accent-color'> Last Updated: </p>
-											<p> Angry </p>
+											<p> Last Updated: </p>
+											<p class = 'text-accent-color'
+											   id = 'date-display'></p>
 										</div>
 									</div>
 								</div>
@@ -124,24 +128,7 @@
 
 					<div class = 'flex-fill window reveal' data-title = 'Blog Updates'>
 
-						<div class = 'window-content'>
-							<div>
-								<p class = 'text-accent-color'> My Girlfriend is at my Place! </p>
-								<div class = 'flex-row flex-space-between'>
-									<p> 17/10/2025 </p>
-									<p> 11:50 AM </p>
-								</div>
-							</div>
-
-							<hr>
-
-							<div>
-								<p class = 'text-accent-color'> My Girlfriend is at my Place! </p>
-								<div class = 'flex-row flex-space-between'>
-									<p> 17/10/2025 </p>
-									<p> 11:50 AM </p>
-								</div>
-							</div>
+						<div class = 'window-content' id = 'recent-blogs'>
 
 						</div>
 					</div>
@@ -211,51 +198,119 @@
 		</div>
 
 		<footer>
-			<div id = 'website-description'>
-				<a><h2> Fafefifofuff </h2></a>
-				<p> I try to have fun and make cool stuff so I built this, my own little cozy place on the internet. </p>
-				<p style = 'margin-top: 1em;'> @2025. All Rights Reserved by <a class = 'name-emphasis'>Fafefifofuff</a></p>
-			</div>
-
-			<div class = 'mobile-omit tablet-omit'>
-				<h3>Contact me Here</h3>
-				
-				<div class = 'contact-info-container'>
-					<img src = 'assets/social-media-icons/email.svg' class = 'contact-icon'>
-					<a class = 'no-decor-link'>jian.santiago39@gmail.com</a>
+			<div class = 'footer-content'>
+				<div id = 'website-description'>
+					<a><h2> Fafefifofuff </h2></a>
+					<p> I try to have fun and make cool stuff so I built this, my own little cozy place on the internet. </p>
+					<p style = 'margin-top: 1em;'> @2025. All Rights Reserved by <a class = 'name-emphasis'>Fafefifofuff</a></p>
 				</div>
 
-				<div class = 'contact-info-container'>
-					<img src = 'assets/social-media-icons/twitter.svg' class = 'contact-icon'>
-					<a href = 'https://x.com/fafefifofuff' class = 'no-decor-link'>@fafefifofuff</a>
+				<div class = 'mobile-omit tablet-omit'>
+					<h3>Contact me Here</h3>
+					
+					<div class = 'contact-info-container'>
+						<img src = 'assets/social-media-icons/email.svg' class = 'contact-icon'>
+						<a class = 'no-decor-link'>jian.santiago39@gmail.com</a>
+					</div>
+
+					<div class = 'contact-info-container'>
+						<img src = 'assets/social-media-icons/twitter.svg' class = 'contact-icon'>
+						<a href = 'https://x.com/fafefifofuff' class = 'no-decor-link'>@fafefifofuff</a>
+					</div>
 				</div>
+
+				<div id = 'money-donation' class = 'mobile-omit'>
+					<h3>Buy Me Coffee</h3>
+					<a href = 'https://ko-fi.com/fafefifofuff'>
+						<img src = 'assets/misc/donate-button.png' 
+							 style = 'width: 100%; margin-top: 0.5rem;'>
+					</a>
+				</div>
+
+				<div id = 'newsletter' class = 'mobile-omit'>
+					<h3>Join my Newsletter</h3>
+
+					<form method = 'POST' action = ''> <!-- TODO: Implement this -->
+						
+						<input type = 'text' 
+							   placeholder = 'youremail@emailprovider.com'>
+						
+						<input type = 'button' 
+							   value = 'Subscribe'>
+					</form>
+				</div> 
 			</div>
-
-			<div id = 'money-donation' class = 'mobile-omit'>
-				<h3>Buy Me Coffee</h3>
-				<a href = 'https://ko-fi.com/fafefifofuff'>
-					<img src = 'assets/misc/donate-button.png' 
-						 style = 'width: 100%; margin-top: 0.5rem;'>
-				</a>
-			</div>
-
-			<div id = 'newsletter' class = 'mobile-omit'>
-				<h3>Join my Newsletter</h3>
-
-				<form method = 'POST' action = ''> <!-- TODO: Implement this -->
-					
-					<input type = 'text' 
-						   placeholder = 'youremail@emailprovider.com'>
-					
-					<input type = 'button' 
-						   value = 'Subscribe'>
-				</form>
-			</div> 
 		</footer>
 
 		<script src = 'scripts/window.js'></script>	
 		<script src = 'scripts/parallax.js'></script>	
 		<script src = 'scripts/reveal-effect.js'></script>	
 		<script src = 'scripts/bio-window.js'></script>
+
+		<script src = 'config.js'> </script>
+		<script>
+			const recentBlogsContainer = document.querySelector('#recent-blogs');
+			const moodDisplay = document.querySelector('#mood-display');
+			const taskDisplay = document.querySelector('#task-display');
+			const messageDisplay = document.querySelector('#message-display');
+			const dateDisplay = document.querySelector('#date-display');
+			const moodImgDisplay = document.querySelector('#mood-img-display');
+
+			fetch(window.LATEST_STATUS_URL)
+			 .then(response => response.json())
+			 .then(data => {
+			 	moodDisplay.textContent = data.mood;
+			 	taskDisplay.textContent = data.task;
+			 	messageDisplay.textContent = '"' + data.message + '"';
+			 	dateDisplay.textContent = new Date(data.datetime).toLocaleString(undefined, {				
+			 		year: 'numeric',
+					month: 'short',
+					day: 'numeric'
+				});
+				moodImgDisplay.src = 'assets/moods/' + data.mood + '.gif';
+			 });
+
+			fetch(window.RECENT_BLOGS_URL)
+			 .then(response => response.json())
+			 .then(data => {
+			 	data.forEach(post => {
+				 	const postDiv = document.createElement('div');
+
+				 	const title = document.createElement('p');
+				 	title.classList.add('text-accent-color');
+				 	title.textContent = post.title;
+
+				 	postDiv.appendChild(title);
+
+				 	const metaInfoContainer = document.createElement('div');
+				 	metaInfoContainer.classList.add('flex-row');
+				 	metaInfoContainer.classList.add('flex-space-between');
+
+				 	const date = document.createElement('p');
+					date.textContent = new Date(post.datetime).toLocaleString(undefined, {
+						year: 'numeric',
+						month: 'short',
+						day: 'numeric'
+					});
+
+				 	const time = document.createElement('p');
+					time.textContent = new Date(post.datetime).toLocaleString(undefined, {
+						hour: '2-digit',
+						minute: '2-digit',
+						hour12: true   
+					});
+
+				 	metaInfoContainer.appendChild(date);
+				 	metaInfoContainer.appendChild(time);
+
+				 	const border = document.createElement('hr');
+
+				 	postDiv.appendChild(metaInfoContainer);
+				 	postDiv.appendChild(border);
+
+				 	recentBlogsContainer.appendChild(postDiv);
+			 	});
+			 });
+		</script>
 	</body>
 </html>

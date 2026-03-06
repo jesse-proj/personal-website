@@ -1,6 +1,12 @@
+/* Footer */
+
 footer {
 	background: #010A0D;
+	display: flex;
+	justify-content: center;
+}
 
+footer > .footer-content {
 	text-align: center;
 
 	font-size: 0.9rem;
@@ -16,10 +22,14 @@ footer {
 	padding-bottom: 2rem;
 
 	gap: 2rem;
+
+	width: 100%;
+
+	max-width: 1500px;
 }         
 
 @media (max-width: 1080px){
-	footer {
+	footer > .footer-content {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 		justify-content: center;
@@ -47,11 +57,8 @@ footer a {
 	align-items: center;
 }
 
+/* This is kind a hack. The SVGs are not perfect (they have blank tops) so margin is added to "center" the text */
 .contact-info-container a {
-	/* This is kind a hack. The SVGs are not perfect 
-	   (they have blank tops) so margin is added to 
-	   	"center" the text 
-	*/
 	margin-top: 0.4rem;
 }
 
